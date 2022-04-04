@@ -3,6 +3,7 @@ package definitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class TestStepDef {
     @Given("I write hello world in Given")
@@ -18,6 +19,7 @@ public class TestStepDef {
 
     @Then("I write success from Then")
     public void iWriteSuccessFromThen() {
+        Assert.fail();
         System.out.println("Success from Then");
     }
 }
